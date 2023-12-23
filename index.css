@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "matter light" ;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#app{
+    width: 100%;
+    background-color: #fff;
+}
+
+#home{
+    width: 100%;
+    min-height: 100vh;
+}
+
+#head{
+    width: 100%;
+    height: 79px;
+    border: 2px solid black;
+}
+
+#topbarwraper{
+   
+    width: 100%;
+    /* height: 10px; */
+}
+
+#topbar{
+    max-width: 1170px;
+    padding: 8px 0 6px;
+    border: 1px solid green;
+    margin: 0;
+    display: inline-block;
+}
