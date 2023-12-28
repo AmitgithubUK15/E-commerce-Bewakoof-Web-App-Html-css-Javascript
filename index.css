@@ -114,7 +114,7 @@ html,body{
 }
 
 .linksspan{
-  padding: 0 15px;
+  padding: 7px 15px;
 
 }
 
@@ -125,7 +125,138 @@ html,body{
     font-size: 16px;
     /* letter-spacing: 1px; */
 }
+ .linksspan:hover{
+   border-bottom: 4px solid rgb(255, 210, 50);
+   /* transition: ; */
+ }
 
+ #menhover{
+    width: 100%;
+    height: 585px;
+    /* border: 1px solid black; */
+ }
+
+ #menhover #inner {
+    width: 1031px;
+    height: 584px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+ }
+
+ #menhover #inner #contenor{
+    width: 968px;
+    height: 512px;
+    /* border: 1px solid red; */
+    margin: 36px 31px;
+    /* overflow: hidden; */
+    display: inline-flex;
+ }
+ 
+ #menhover #inner #contenor .tags{
+    display: inline-block;
+    width: 189px;
+    height: 512px;
+    /* border: 1px solid blue; */
+}
+ 
+#menhover #inner #contenor #column4 {
+    display: inline-block;
+    width: 404px;
+    height: 512px;
+    /* border: 1px solid blue; */
+    position: relative;
+    top: -2px;
+}
+
+.headh5{
+    padding: 13px 0;
+   
+}
+
+.headh5 h5{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.tagslinks{
+    height: 64vh;
+}
+.tag-link-inner{
+    height: 27px;
+
+}
+
+.tag-link-inner a{
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+
+.tag-link-inner a:hover{
+    border-bottom: 0.5px solid gray;
+    transition: .2s ease-in-out;
+}
+
+.tagslinks  #tag-acc-head h5 a:hover{
+   border: none;
+}
+.tagslinks  #tag-acc-head h5 a{
+    color: black;
+}
+
+.tagslinks #tag-foot-head h5 a:hover{
+    border: none;
+}
+
+.tagslinks #tag-foot-head h5 a{
+    color: black;
+}
+.tagslinks #tag-plus-head h5 a:hover{
+    border: none;
+}
+.tagslinks #tag-plus-head h5 a{
+    color: black;
+}
+
+#menhover #inner #contenor #column4 .tag-with-img{
+    width: 353px;
+    height: 70vh;
+    margin: 0 auto;
+}
+
+#menhover #inner #contenor #column4 .tag-link-withimg{
+    height: 42px;
+    margin: 4px 0   ;
+}
+
+#menhover #inner #contenor #column4 .tag-link-withimg a{
+    text-decoration: none;
+    
+    color: gray;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    width: 353px;
+    display: block;
+}
+
+#menhover #inner #contenor #column4 .tag-link-withimg a img{
+    width: 40px;
+    height: 40px;
+}
+
+/* #menhover #inner #contenor #column4 .tag-link-withimg a img span{
+    margin: -31px 54px;
+    display: block;
+    font-size: 15px;
+} */
 .sarchwrap{
     /* border: 1px solid blue; */
     width: 65%;
@@ -200,4 +331,563 @@ outline: none;
   border-bottom: 1px solid #c0bdbd;
 }   
 
+.linksnav{
+    display: none;
+}
+
+.logo{
+    display: none;
+}
 /* Responsive */
+
+#icon{
+    display: none;
+}
+
+#bar-div{
+    display: none;
+}
+
+.menubar{
+    display: none;
+}
+
+@media only screen  and (max-width:570px){
+    #topbarwraper{
+        display: none;
+    }
+    #topbar{
+        display: none;
+    }
+    #mainheaderwraper{
+        display: none;
+    }
+    .column{
+        display: none;
+    }
+    #bar-div{
+        display: block;
+        cursor: pointer;
+        /* padding:10px 10px; */
+    }
+    #icon{
+        display: block;
+        font-size: 20px;
+        margin: 10px 10px;
+    }
+    #underline{
+        display: none;
+    }
+    #topbarwraper{
+        display: none;
+    }
+
+    #head{
+       
+        width: 100%;
+        height: 45px;
+        background-color: rgb(255, 210, 50);
+    }
+
+    #res_nav{
+        width: 95%;
+        margin: 0 auto;
+        /* background-color: green; */
+        height: 44px;
+        display: flex;
+    }
+
+    .logo{
+        width: 367px;
+        display: block;
+    }
+
+    .logo span{
+        margin: 9px 10px ;
+        display: block;
+    }
+
+    .loginbar{
+        width: 130px;
+        height: 44px;
+        padding: 9.5px 0;
+        display: block;
+    }
+
+    .linksnav{
+        margin: 0 7px;
+        /* display: block; */
+        /* padding: 0 9px; */
+        display: inline-block;
+    }
+    .menubar{
+        width: 270px;
+        display: block;
+        height: 100%;
+        /* border: 1px solid black; */
+        position: absolute;
+        top: -0px;
+        left: 0px;
+        background-color: white;
+        /* margin-left: -270px; */
+        display: none;
+        /* box-shadow: 50px 0px 400px 300px rgba(128, 128, 128, 0.511); */
+        position: fixed;
+    }
+
+    .ment{
+        display: block;
+    }
+
+    .hide{
+        display: none;
+    }
+
+     .welcomeheader{
+        width: 90%;
+        /* border: 1px solid black; */
+        height: 81px;
+        /* margin: 4px auto; */
+        padding: 10px 15px;
+        ;
+    }
+
+    .welcomeheader h5{
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+       font-size: 17px;
+       letter-spacing: 1px;
+       /* font-weight: 400; */
+       cursor: context-menu;
+    }
+
+    .welcomeheader .register{
+        width: 100%;
+        height: 40px;
+        padding: 7px 0;
+    }
+
+    .welcomeheader .register a{
+        text-decoration: none;
+        color: #949494;
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+
+    .greyline{
+        width: 100%;
+        border-bottom: 1px solid #c2c2c2;
+    }
+
+    .menuwraper{
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    #shopin{
+        width: 90%;
+        
+        height: 250px;
+        margin: 0 auto;
+    }
+
+    #shopin h5{
+       
+        margin: 10px 0;
+        font-size: 13px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #aca6a6;
+        font-weight: 800;
+        letter-spacing: 1px;
+    }
+
+    #shopin .menu-links{
+        width: 100%;
+        height: 188px;
+       /* border: 1px solid black; */
+    }
+    /* #shopin .menu-links */
+     .click{
+        width: 100%;
+        height: 45px;
+        /* border: 1px solid blue; */
+    }
+
+    /* #shopin .menu-links  */
+     .click a{
+        text-align: left;
+        padding: 13px 0;
+        text-decoration: none;
+        width: 100%;
+        height: 50px;
+        
+        display: inline-block;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+        font-size: 14px;
+        color:black;
+    }
+    /* #shopin .menu-links  */
+
+    .click img{
+        width: 40px;
+        position: absolute;
+        top: 121px;
+        left: 200px;
+        /* display: inline-block; */
+    }
+
+    #click2 img{
+        width: 40px;
+        position: absolute;
+        top: 165px;
+        left: 200px;
+        /* display: inline-block; */
+    }
+
+    #click3 img{
+        width: 40px;
+        position: absolute;
+        top: 210px;
+        left: 200px;
+        /* display: inline-block; */
+    }
+
+     
+    #Contact{
+       width: 100%;
+       height: 205px;
+       margin: 0 auto;
+       background-color: rgb(237, 237, 237);
+       margin: -37px 0;
+    }
+
+    #Contact .wrap{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #Contact h5{
+        margin: 0px 0;
+        font-size: 13px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #aca6a6;
+        font-weight: 800;
+        letter-spacing: 1px;
+        padding: 16px 0;
+    }
+
+
+    #Aboutus{
+        width: 100%;
+        height: 188px;
+        margin-top: 16px;
+        background-color: rgb(237, 237, 237); 
+    }
+
+    #Aboutus h5{
+        margin: 10px 0;
+        font-size: 13px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #aca6a6;
+        font-weight: 800;
+        letter-spacing: 1px;
+        padding: 7px 0;
+    }
+
+    #Aboutus .wrap-contact{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #loginglink {
+        width: 100%;
+    }
+
+    #loginglink .wrap-contact{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen  and (max-width:492px){
+    #topbarwraper{
+        display: none;
+    }
+    #topbar{
+        display: none;
+    }
+    #mainheaderwraper{
+        display: none;
+    }
+    .column{
+        display: none;
+    }
+    #bar-div{
+        display: block;
+        /* padding:10px 10px; */
+    }
+    #icon{
+        display: block;
+        font-size: 20px;
+        margin: 10px 10px;
+    }
+    #underline{
+        display: none;
+    }
+    #topbarwraper{
+        display: none;
+    }
+
+    #head{
+       
+        width: 100%;
+        height: 45px;
+        background-color: rgb(255, 210, 50);
+    }
+
+    #res_nav{
+        width: 95%;
+        margin: 0 auto;
+        /* background-color: green; */
+        height: 44px;
+        display: flex;
+    }
+
+    .logo{
+        width: 299px;
+        display: block;
+    }
+
+    .logo span{
+        margin: 9px 10px ;
+        display: block;
+    }
+
+    .loginbar{
+        width: 130px;
+        height: 44px;
+        padding: 9.5px 0;
+        display: block;
+    }
+
+    .linksnav{
+        margin: 0 8px;
+        display: block;
+        /* padding: 10px 0; */
+        display: inline-block;
+    }
+
+}
+
+@media only screen  and (max-width:492px){
+    #topbarwraper{
+        display: none;
+    }
+    #topbar{
+        display: none;
+    }
+    #mainheaderwraper{
+        display: none;
+    }
+    .column{
+        display: none;
+    }
+    #bar-div{
+        display: block;
+        /* padding:10px 10px; */
+    }
+    #icon{
+        display: block;
+        font-size: 20px;
+        margin: 10px 10px;
+    }
+    #underline{
+        display: none;
+    }
+    #topbarwraper{
+        display: none;
+    }
+
+    #head{
+       
+        width: 100%;
+        height: 45px;
+        background-color: rgb(255, 210, 50);
+    }
+
+    #res_nav{
+        width: 95%;
+        margin: 0 auto;
+        /* background-color: green; */
+        height: 44px;
+        display: flex;
+    }
+
+    .logo{
+        width: 265px;
+        display: block;
+    }
+
+    .logo span{
+        margin: 9px 10px ;
+        display: block;
+    }
+
+    .loginbar{
+        width: 130px;
+        height: 44px;
+        padding: 9.5px 0;
+        display: block;
+    }
+
+    .linksnav{
+        margin: 0 8px;
+        display: block;
+        /* padding: 10px 0; */
+        display: inline-block;
+    }
+
+}
+
+@media only screen  and (max-width:422px){
+    #topbarwraper{
+        display: none;
+    }
+    #topbar{
+        display: none;
+    }
+    #mainheaderwraper{
+        display: none;
+    }
+    .column{
+        display: none;
+    }
+    #bar-div{
+        display: block;
+        /* padding:10px 10px; */
+    }
+    #icon{
+        display: block;
+        font-size: 20px;
+        margin: 10px 10px;
+    }
+    #underline{
+        display: none;
+    }
+    #topbarwraper{
+        display: none;
+    }
+
+    #head{
+       
+        width: 100%;
+        height: 45px;
+        background-color: rgb(255, 210, 50);
+    }
+
+    #res_nav{
+        width: 95%;
+        margin: 0 auto;
+        /* background-color: green; */
+        height: 44px;
+        display: flex;
+    }
+
+    .logo{
+        width: 224px;
+        display: block;
+    }
+
+    .logo span{
+        margin: 9px 10px ;
+        display: block;
+    }
+
+    .loginbar{
+        width: 130px;
+        height: 44px;
+        padding: 9.5px 0;
+        display: block;
+    }
+
+    .linksnav{
+        margin: 0 7px;
+        display: block;
+        /* padding: 10px 0; */
+        display: inline-block;
+    }
+
+}
+
+@media only screen  and (max-width:361px){
+    #topbarwraper{
+        display: none;
+    }
+    #topbar{
+        display: none;
+    }
+    #mainheaderwraper{
+        display: none;
+    }
+    .column{
+        display: none;
+    }
+    #bar-div{
+        display: block;
+        /* padding:10px 10px; */
+    }
+    #icon{
+        display: block;
+        font-size: 20px;
+        margin: 10px 10px;
+    }
+    #underline{
+        display: none;
+    }
+    #topbarwraper{
+        display: none;
+    }
+
+    #head{
+       
+        width: 100%;
+        height: 45px;
+        background-color: rgb(255, 210, 50);
+    }
+
+    #res_nav{
+        width: 95%;
+        margin: 0 auto;
+        /* background-color: green; */
+        height: 44px;
+        display: flex;
+    }
+
+    .logo{
+        width: 224px;
+        display: block;
+    }
+
+    .logo span{
+        margin: 9px 10px ;
+        display: block;
+    }
+
+    .loginbar{
+        width: 130px;
+        height: 44px;
+        padding: 9.5px 0;
+        display: block;
+    }
+
+    .linksnav{
+        margin: 0 7px;
+        display: block;
+        /* padding: 10px 0; */
+        display: inline-block;
+    }
+
+}
+

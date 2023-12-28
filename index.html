@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,12 +6,34 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="woman_hover.css">
 </head>
 <body>
     <div id="app">
         <div id="home">
-            <div id="head">
+            <div id="head" class="topnav">
+                <div id="res_nav">
+                    <div id="bar-div">
+                        <i class="fa-solid fa-bars" style="color: #0a0a0a;" id="icon"></i>
+                       </div>
+                    <div class="logo">
+                           <span>
+                            <a>
+                            <img src="	https://images.bewakoof.com/web/ic-web-head-bwk-primary-logo-eyes.svg" alt="">
+                           </span></a>
+                    </div>
+                    <div class="loginbar">
+                        <span class="linksnav">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #000000; position: relative; font-size: 20px; " id="nav-search" ></i>
+                        </span>
+                        <span class="linksnav">
+                            <a href="#"><i class="fa-regular fa-heart" style="font-size: 20px; color:black;"></i></a>
+                        </span>
+                        <span class="linksnav">
+                            <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #090d15; font-size: 20px;"></i></a>
+                        </span>
+                    </div>
+                </div>
                 <div id="topbarwraper">
                 <div id="topbar">
                     <div class="pull-left">
@@ -19,6 +41,7 @@
                      <a class="headlinks" href="#">Fanbook</a>
                      <a class="headlinks" href="#">Download App</a>
                      <a class="headlinks" href="#">TriBe MemberShip</a>
+                   <!-- <a href="#" onclick="myFunction()"><i class="fa-solid fa-bars" style="color: #000000;" id="navicon" ></i></a>   -->
                     </div>
                     <div class="pull-right">
                        <a class="headlinks" href="#">Contact us</a>
@@ -29,6 +52,7 @@
 
                 <div id="mainheaderwraper">
                     <div class="mainheader-row">
+                      
                          <div id="col1-images" class="column">
                             <a href="#" style="display: inline;">
                                 <img src="https://images.bewakoof.com/web/ic-desktop-bwkf-trademark-logo.svg" alt="" style="width: 150px;">
@@ -36,13 +60,13 @@
                          </div>
                          <div id="col2-nav" class="column" >
                             <div class="col2wraper">
-                              <span class="linksspan" >
+                              <span class="linksspan" id="Men" >
                                 <a href="#" class="links">MEN</a>
                               </span>
-                              <span class="linksspan">
+                              <span class="linksspan" id="women">
                                 <a href="#" class="links">WOMEN</a>
                               </span>
-                              <span class="linksspan">
+                              <span class="linksspan" id="mobile">
                                 <a href="#" class="links">MOBILE COVERS</a>
                               </span>
                             </div>
@@ -72,8 +96,377 @@
                     </div>
                 </div>
                 <div id="underline"></div>
+
+                <div class="menubar" id="menu">
+                    <div class="welcomeheader">
+                      <h5>Welcome Guest</h5>
+                      <div class="register">
+                        <a href="#">Loging / Sign Up</a>
+                      </div>
+                    </div>
+                    <div class="greyline"></div>
+                    <div class="menuwraper">
+                        <div class="menupoints" id="shopin">
+                            <h5>SHOP IN</h5>
+                            <div class="menu-links">
+                                <div class="click" id="click1">
+                                    <a href="#">
+                                        Men
+                                        <img src="https://images.bewakoof.com/nav_menu/Circle-icon-men--1--1684748735.png" alt="" class="imga">
+                                    </a>
+                                </div>
+                                <div class="click" id="click2">
+                                    <a href="#">
+                                        Women
+                                        <img src="https://images.bewakoof.com/nav_menu/Circle-icon-women--1--1684748736.png" alt="" >
+                                    </a>
+                                </div>
+                                <div class="click" id="click3">
+                                    <a href="#">
+                                        Shop by Fandom
+                                        <img src="https://images.bewakoof.com/nav_menu/Circle-icon-character-shop--1--1684748738.png" alt="" class="imga">
+                                    </a>
+                                </div>
+                                <div class="click" id="click4">
+                                    <a href="#">
+                                        Mobile Covers
+                                    </a>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="menupoints" id="Contact">
+                           <div class="wrap">
+                            <h5>CONTACT US</h5>
+                            <div class="menu-links">
+                                <div class="click" id="click1">
+                                    <a href="#">Help & Support</a>
+                                </div>
+                                <div class="click" id="click2">
+                                    <a href="#">Feedback & Suggestions</a>
+                                </div>
+                                <div class="click" id="click3">
+                                    <a href="#">Become a Seller</a>
+                                </div>
+                            </div> 
+                           </div>
+                        </div>
+                        <div class="menupoints" id="Aboutus">
+                            <div class="wrap-contact">
+                                <h5>CONTACT US</h5>
+                                <div class="menu-links">
+                                    <div class="click" id="click1">
+                                        <a href="#">Our Story</a>
+                                    </div>
+                                    <div class="click" id="click2">
+                                        <a href="#">Fanbook</a>
+                                    </div>
+                                    <div class="click" id="click3">
+                                        <a href="#">Blog</a>
+                                    </div>
+                                </div> 
+                               </div>
+                        </div>
+                        <div Class="menpoints" id="loginglink">
+                            <div class="wrap-contact">
+                                <div class="menu-links">
+                                    <div class="click" id="click1">
+                                        <a href="#">Login</a>
+                                    </div>
+                                </div> 
+                               </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="menhover" style="display: none;">
+                    <div id="inner">
+                        <div id="contenor">
+                           
+                            <div class="tags" id="column1">
+                                <div class="headh5">
+                                  <h5>Topwear</h5>
+                                </div>
+                                <div class="tagslinks">
+                                    <div class="tag-link-inner"><a href="#">Printed T-Shirt</a></div>
+                                    <div class="tag-link-inner"><a href="#">Oversized T-shirts</a></div>
+                                    <div class="tag-link-inner"><a href="#">Plain T-shirts</a></div>
+                                    <div class="tag-link-inner"><a href="#">Full Sleeve T-shirts</a></div>
+                                    <div class="tag-link-inner"><a href="#">Half Sleev T-shirts</a></div>
+                                    <div class="tag-link-inner"><a href="#">Polo T-shirts</a></div>
+                                    <div class="tag-link-inner"><a href="#">T-shirts Combos</a></div>
+                                    <div class="tag-link-inner"><a href="#">Sweatshirts & Hoodies</a></div>
+                                    <div class="tag-link-inner"><a href="#">Jackets</a></div>
+                                    <div class="tag-link-inner"><a href="#">Sweaters</a></div>
+                                    <div class="tag-link-inner"><a href="#">Shirts</a></div>
+                                    <div class="tag-link-inner"><a href="#">Co-ord Sets</a></div>
+                                    <div class="tag-link-inner"><a href="#">Kurtas</a></div>
+                                    <div class="tag-link-inner"><a href="#">Vests</a></div>
+                                    <div class="tag-link-inner"><a href="#">Plus Size Topwear</a></div>
+                                    <div class="tag-link-inner"><a href="#">Customize T-shirts</a></div>
+                                    <div class="tag-link-inner"><a href="#">All Topwear</a></div>
+                                </div>
+                            </div>
+                            <div class="tags" id="column2"> 
+                                <div class="headh5">
+                                    <h5>Bottomwear</h5>
+                                  </div>
+                                  <div class="tagslinks">
+                                      <div class="tag-link-inner"><a href="#">Joggers</a></div>
+                                      <div class="tag-link-inner"><a href="#">Jeans</a></div>
+                                      <div class="tag-link-inner"><a href="#">Pajamas</a></div>
+                                      <div class="tag-link-inner"><a href="#">Cargos</a></div>
+                                      <div class="tag-link-inner"><a href="#">Shorts</a></div>
+                                      <div class="tag-link-inner"><a href="#">Boxers</a></div>
+                                      <div class="tag-link-inner"><a href="#">Combos</a></div>
+                                      <div class="tag-link-inner"><a href="#">Plus Size Bottomwear</a></div>
+                                      <div class="tag-link-inner"><a href="#">All Bottomwear</a></div>
+                                      <div class="tag-link-inner"><a href="#"></a></div>
+                                      <div class="tag-link-inner" id="tag-acc-head"><h5><a href="#">Accessories</a></h5></div>
+                                      <div class="tag-link-inner"><a href="#">Mobile covers</a></div>
+                                      <div class="tag-link-inner"><a href="#">Backpacks</a></div>
+                                      <div class="tag-link-inner"><a href="#">Sling bags</a></div>
+                                      <div class="tag-link-inner"><a href="#">Caps</a></div>
+                                      <div class="tag-link-inner"><a href="#">Sliders</a></div>
+                                      <div class="tag-link-inner"><a href="#">Printed T-Shirt</a></div>
+                                  </div>
+                            </div>
+                            <div class="tags" id="column3">    
+                                 <div class="headh5">
+                                <h5>Winterwear</h5>
+                              </div>
+                              <div class="tagslinks">
+                                  <div class="tag-link-inner"><a href="#">Sweatshirts & Hoodies</a></div>
+                                  <div class="tag-link-inner"><a href="#">Jackets</a></div>
+                                  <div class="tag-link-inner"><a href="#">Sweaters</a></div>
+                                  <div class="tag-link-inner"><a href="#">Full Sleeve T-shirts</a></div>
+                                  <div class="tag-link-inner"><a href="#">Joggers</a></div>
+                                  <div class="tag-link-inner"><a href="#">Plus Size</a></div>
+                                  <div class="tag-link-inner"><a href="#"></a></div>
+                                  <div class="tag-link-inner" id="tag-foot-head"><h5 ><a href="#">Footwear</a></h5></div>
+                                  <div class="tag-link-inner"><a href="#">Sliders</a></div>
+                                  <div class="tag-link-inner"><a href="#">Clogs</a></div>
+                                  <div class="tag-link-inner"><a href="#"></a></div>
+                                  <div class="tag-link-inner" id="tag-plus-head"><h5><a href="#">Plus Size</a></h5></div>
+                                  <div class="tag-link-inner"><a href="#">T-shirts</a></div>
+                                  <div class="tag-link-inner"><a href="#">Shirts</a></div>
+                                  <div class="tag-link-inner"><a href="#">Jackets</a></div>
+                                  <div class="tag-link-inner"><a href="#">Sweatshirts & Hoodies</a></div>
+                                  <div class="tag-link-inner"><a href="#">Bottomwear</a></div>
+                              </div></div>
+                              <div class="line" style=""></div>
+                            <div class="tags" id="column4">
+                                <div class="tag-with-img">
+                                    <div class="headh5">
+                                        <h5>SPECIALS</h5>
+                                      </div>
+                                      <div class="tagslinks">
+                                          <div class="tag-link-withimg"><a href="#"><img src="https://images.bewakoof.com/nav_menu/Circle-Nav-Year-End-Sale-1703059480.png" alt=""><Span style="margin: -31px 54px; display: block; font-size: 15px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Printed T-Shirt</Span></a></div>
+                                          <div class="tag-link-withimg"><a href="#"><img src="https://images.bewakoof.com/nav_menu/DisneyVillains-168x168-1702822672.png" alt=""><Span style="margin: -31px 54px; display: block; font-size: 15px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Disney Villans </Span></a></div>
+                                          <div class="tag-link-withimg"><a href="#"><img src="https://images.bewakoof.com/nav_menu/circle-168x168-IK-1699605086.png" alt=""><Span style="margin: -31px 54px; display: block; font-size: 15px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Bwkf Ishaan</Span></a></div>
+                                          <div class="tag-link-withimg"><a href="#"><img src="https://images.bewakoof.com/nav_menu/MayCOTM-office-168x168-HarryPotter-1701350799.png" alt=""><Span style="margin: -31px 54px; display: block; font-size: 15px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">COTM X Harry</Span></a></div>
+                                          <div class="tag-link-withimg"><a href="#"><img src="https://images.bewakoof.com/nav_menu/Circle-cotm--168x168-1698769567.png" alt=""><Span style="margin: -31px 54px; display: block; font-size: 15px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Bwfk Mickey</Span></a></div>
+                                          <div class="tag-link-withimg"><a href="#"><img src="https://images.bewakoof.com/nav_menu/circle-Icon-HD-168x168-1698328094.png" alt=""><Span style="margin: -31px 54px; display: block; font-size: 15px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">bewakoof Hevy</Span></a></div>
+                                          <div class="tag-link-withimg"><a href="#"><img src="https://images.bewakoof.com/nav_menu/Circle-Nav-1698393745.jpg" alt=""><Span style="margin: -31px 54px; display: block; font-size: 15px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Winterwear</Span></a></div>
+                                          <div class="tag-link-withimg"><a href="#"><img src="https://images.bewakoof.com/nav_menu/circle-Naruto-168--3--1697690303.png" alt=""><Span style="margin: -31px 54px; display: block; font-size: 15px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Printed T-Shirt</Span></a></div>
+                                          <div class="tag-link-withimg"><a href="#"><img src="https://images.bewakoof.com/nav_menu/Circle-Nav-168x168-1697373196.png" alt=""><Span style="margin: -31px 54px; display: block; font-size: 15px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Bwkf x Naruto</Span></a></div>
+                                          <div class="tag-link-withimg"><a href="#"><img src="https://images.bewakoof.com/nav_menu/Circle-icon-Loki-168x168-1696599786.png" alt=""><Span style="margin: -31px 54px; display: block; font-size: 15px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Bwkf X Loki</Span></a></div>                                      
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="womenhover" style="display: none;">
+                    <div id="wo-inner">
+                        <div id="wo-contenor">
+                           
+                            <div class="tags" id="wo-column1">
+                                <div class="wo-headh5">
+                                  <h5>Topwear</h5>
+                                </div>
+                                <div class="tagslinks">
+                                    <div class="tag-link-inner"><a href="#">Printed T-Shirt</a></div>
+                                    <div class="tag-link-inner"><a href="#">Oversized T-shirts</a></div>
+                                    <div class="tag-link-inner"><a href="#">Plain T-shirts</a></div>
+                                    <div class="tag-link-inner"><a href="#">Full Sleeve T-shirts</a></div>
+                                    <div class="tag-link-inner"><a href="#">Half Sleev T-shirts</a></div>
+                                    <div class="tag-link-inner"><a href="#">Polo T-shirts</a></div>
+                                    <div class="tag-link-inner"><a href="#">T-shirts Combos</a></div>
+                                    <div class="tag-link-inner"><a href="#">Sweatshirts & Hoodies</a></div>
+                                    <div class="tag-link-inner"><a href="#">Jackets</a></div>
+                                    <div class="tag-link-inner"><a href="#">Sweaters</a></div>
+                                    <div class="tag-link-inner"><a href="#">Shirts</a></div>
+                                    <div class="tag-link-inner"><a href="#">Co-ord Sets</a></div>
+                                    <div class="tag-link-inner"><a href="#">Kurtas</a></div>
+                                    <div class="tag-link-inner"><a href="#">Vests</a></div>
+                                    <div class="tag-link-inner"><a href="#">Plus Size Topwear</a></div>
+                                    <div class="tag-link-inner"><a href="#">Customize T-shirts</a></div>
+                                    <div class="tag-link-inner"><a href="#">All Topwear</a></div>
+                                </div>
+                            </div>
+                            <div class="tags" id="column2"> 
+                                <div class="headh5">
+                                    <h5>Bottomwear</h5>
+                                  </div>
+                                  <div class="tagslinks">
+                                      <div class="tag-link-inner"><a href="#">Joggers</a></div>
+                                      <div class="tag-link-inner"><a href="#">Jeans</a></div>
+                                      <div class="tag-link-inner"><a href="#">Pajamas</a></div>
+                                      <div class="tag-link-inner"><a href="#">Cargos</a></div>
+                                      <div class="tag-link-inner"><a href="#">Shorts</a></div>
+                                      <div class="tag-link-inner"><a href="#">Boxers</a></div>
+                                      <div class="tag-link-inner"><a href="#">Combos</a></div>
+                                      <div class="tag-link-inner"><a href="#">Plus Size Bottomwear</a></div>
+                                      <div class="tag-link-inner"><a href="#">All Bottomwear</a></div>
+                                      <div class="tag-link-inner"><a href="#"></a></div>
+                                      <div class="tag-link-inner" id="tag-acc-head"><h5><a href="#"></a></h5></div>
+                                      <div class="tag-link-inner"><a href="#"></a></div>
+                                      <div class="tag-link-inner"><a href="#"></a></div>
+                                      <div class="tag-link-inner"><a href="#"></a></div>
+                                      <div class="tag-link-inner"><a href="#"></a></div>
+                                      <div class="tag-link-inner"><a href="#"></a></div>
+                                      <div class="tag-link-inner"><a href="#">.</a></div>
+                                  </div>
+                            </div>
+                            <div class="tags" id="column3">    
+                                 <div class="headh5">
+                                <h5>Winterwear</h5>
+                              </div>
+                              <div class="tagslinks">
+                                  <div class="tag-link-inner"><a href="#">Sweatshirts & Hoodies</a></div>
+                                  <div class="tag-link-inner"><a href="#">Jackets</a></div>
+                                  <div class="tag-link-inner"><a href="#">Sweaters</a></div>
+                                  <div class="tag-link-inner"><a href="#">Full Sleeve T-shirts</a></div>
+                                  <div class="tag-link-inner"><a href="#">Joggers</a></div>
+                                  <div class="tag-link-inner"><a href="#">Plus Size</a></div>
+                                  <div class="tag-link-inner"><a href="#"></a></div>
+                                  <div class="tag-link-inner" id="tag-foot-head"><h5 ><a href="#">Footwear</a></h5></div>
+                                  <div class="tag-link-inner"><a href="#">Sliders</a></div>
+                                  <div class="tag-link-inner"><a href="#">Clogs</a></div>
+                                  <div class="tag-link-inner"><a href="#"></a></div>
+                                  <div class="tag-link-inner" id="tag-plus-head"><h5><a href="#">Plus Size</a></h5></div>
+                                  <div class="tag-link-inner"><a href="#">T-shirts</a></div>
+                                  <div class="tag-link-inner"><a href="#">Shirts</a></div>
+                                  <div class="tag-link-inner"><a href="#">Jackets</a></div>
+                                  <div class="tag-link-inner"><a href="#">Sweatshirts & Hoodies</a></div>
+                                  <div class="tag-link-inner"><a href="#">Bottomwear</a></div>
+                              </div></div>
+                              <div class="line" style=""></div>
+                            <div class="tags" id="wo-column4">
+                                <div class="tag-with-img">
+                                    <div class="headh5">
+                                        <h5>SPECIALS</h5>
+                                      </div>
+                                      <div class="tagslinks">
+                                          <div class="tag-link-withimg"><a href="#"><img src="https://images.bewakoof.com/nav_menu/Circle-Nav-Year-End-Sale-1703059480.png" alt=""><Span style="margin: -31px 54px; display: block; font-size: 15px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Printed T-Shirt</Span></a></div>
+                                          <div class="tag-link-withimg"><a href="#"><img src="https://images.bewakoof.com/nav_menu/DisneyVillains-168x168-1702822672.png" alt=""><Span style="margin: -31px 54px; display: block; font-size: 15px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Disney Villans </Span></a></div>
+                                          <div class="tag-link-withimg"><a href="#"><img src="https://images.bewakoof.com/nav_menu/NewBottomNav-RM-336x336-1701505415.png" alt=""><Span style="margin: -31px 54px; display: block; font-size: 15px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Bwkf X Rashmika</Span></a></div>
+                                          <div class="tag-link-withimg"><a href="#"><img src="https://images.bewakoof.com/nav_menu/MayCOTM-office-168x168-HarryPotter-1701350799.png" alt=""><Span style="margin: -31px 54px; display: block; font-size: 15px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">COTM X Harry</Span></a></div>
+                                          <div class="tag-link-withimg"><a href="#"><img src="https://images.bewakoof.com/nav_menu/Circle-cotm--168x168-1698769567.png" alt=""><Span style="margin: -31px 54px; display: block; font-size: 15px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Bwfk Mickey</Span></a></div>
+                                          <div class="tag-link-withimg"><a href="#"><img src="https://images.bewakoof.com/nav_menu/circle-Icon-HD-168x168-1698328094.png" alt=""><Span style="margin: -31px 54px; display: block; font-size: 15px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">bewakoof Hevy</Span></a></div>
+                                          <div class="tag-link-withimg"><a href="#"><img src="https://images.bewakoof.com/nav_menu/Circle-Nav-1698393745.jpg" alt=""><Span style="margin: -31px 54px; display: block; font-size: 15px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Winterwear</Span></a></div>
+                                          <div class="tag-link-withimg"><a href="#"><img src="https://images.bewakoof.com/nav_menu/circle-Naruto-168--3--1697690303.png" alt=""><Span style="margin: -31px 54px; display: block; font-size: 15px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Printed T-Shirt</Span></a></div>
+                                          <div class="tag-link-withimg"><a href="#"><img src="https://images.bewakoof.com/nav_menu/Circle-Nav-168x168-1697373196.png" alt=""><Span style="margin: -31px 54px; display: block; font-size: 15px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Bwkf x Naruto</Span></a></div>
+                                          <div class="tag-link-withimg"><a href="#"><img src="https://images.bewakoof.com/nav_menu/Circle-minion-168x168--1--1695406784.png" alt=""><Span style="margin: -31px 54px; display: block; font-size: 15px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Bwkf X Miniox</Span></a></div>                                      
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="mobilehover" style="display: none;">
+                    <div id="mo-inner">
+                        <div id="mo-contenor">
+                           
+                            <div class="tags" id="mo-column1">
+                                <div class="mo-headh5">
+                                  <h5>Popular</h5>
+                                </div>
+                                <div class="tagslinks">
+                                    <div class="tag-link-inner" id="noting"><h5 ><a href="#">Nothing</a></h5></div>
+                                    <div class="tag-link-inner"><a href="#">Nothing Phone 1</a></div>
+                                    <div class="tag-link-inner"><a href="#">Nothing Phone 2</a></div>
+                                    
+                                </div>
+
+                                <div class="mo-headh5">
+                                    <h5>Apple</h5>
+                                  </div>
+                                  <div class="tagslinks">
+                                      <div class="tag-link-inner"><h5><a href="#">Apple 15 Pro Max</a></h5></div>
+                                      <div class="tag-link-inner"><a href="#">Apple 15 Pro</a></div>
+                                      <div class="tag-link-inner"><a href="#">Apple 15 Plus</a></div>
+                                      
+                                  </div>
+                            </div>
+                            <div class="tags" id="column2"> 
+                               
+                                  <div class="tagslinks" id="tag-column2" >
+                                      <div class="tag-link-inner" id="Xiaomi"><h5 ><a href="#">Xiaomi</a></h5></div>
+                                      <div class="tag-link-inner"><a href="#">Poco X4 Pro 5g</a></div>
+                                      <div class="tag-link-inner"><a href="#">Poco M4</a></div>
+                                      <div class="tag-link-inner"><a href="#">Poco M4 pro</a></div>
+                                      
+                                  </div>
+                                  <div class="tagslinks" id="tag-column2-2">
+                                    <div class="tag-link-inner"  id="Samsung"><h5><a href="#">Samsung</a></h5></div>
+                                    <div class="tag-link-inner"><a href="#">Samsung Galaxy S21 5G</a></div>
+                                    <div class="tag-link-inner"><a href="#">Samsung Galaxy S20</a></div>
+                                    <div class="tag-link-inner"><a href="#">Samsung Galaxy Note 10</a></div>
+                                    
+                                </div>
+                            </div>
+                            <div class="tags" id="column3">   
+                                <div class="tagslinks" id="tag-column2" >
+                                    <div class="tag-link-inner" id="Oneplus"><h5 ><a href="#">Oneplus</a></h5></div>
+                                    <div class="tag-link-inner"><a href="#">Poco X4 Pro 5g</a></div>
+                                    <div class="tag-link-inner"><a href="#">Poco M4</a></div>
+                                    <div class="tag-link-inner"><a href="#">Poco M4 pro</a></div>
+                                    
+                                </div>
+                                <div class="tagslinks" id="tag-column2-2">
+                                  <div class="tag-link-inner"  id="Realme"><h5><a href="#">Realme</a></h5></div>
+                                  <div class="tag-link-inner"><a href="#">Samsung Galaxy S21 5G</a></div>
+                                  <div class="tag-link-inner"><a href="#">Samsung Galaxy S20</a></div>
+                                  <div class="tag-link-inner"><a href="#">Samsung Galaxy Note 10</a></div>
+                                  
+                              </div> 
+
+                              <div class="tagslinks" id="tag-column2-2">
+                                <div class="tag-link-inner"  id="Vivo"><h5><a href="#">Vivo</a></h5></div>
+                                <div class="tag-link-inner"><a href="#">Samsung Galaxy S21 5G</a></div>
+                                <div class="tag-link-inner"><a href="#">Samsung Galaxy S20</a></div>
+                                <div class="tag-link-inner"><a href="#">Samsung Galaxy Note 10</a></div>
+                                
+                            </div> 
+                            </div>
+                            <div class="line" style=""></div>
+                            <div class="tags" id="mo-column4">
+                                <div class="tagimg">
+                                
+                                      <div class="leftside">
+                                        <h5>OTHER BRANDS</h5>
+                                        <div  id="tagandimg">
+                                            <div class="tag-linkwithimg"><a href="#">Oppo</a></div>
+                                            <div class="tag-linkwithimg"><a href="#">Huawei</a></div>
+                                            <div class="tag-linkwithimg"><a href="#">Moto</a></div>
+                                            
+                                            <!-- <div class="alldevices" style="margin-top: 55px;"><a href="#" style="color:rgb(51, 190, 250);font-family: Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">See all devices</a></div> -->
+                                        </div>
+                                      </div>
+
+                                      <div class="rightside">
+                                        <img src="https://images.bewakoof.com/nav_menu/bewakoof-online-fashion-COTM-mobile-cover-navigation-box-desktop-1612275399.jpg" alt="">
+                                  
+                                       
+                        
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
+              
         </div>
     </div>
   <!-- <script src="./header.js"> </script> -->

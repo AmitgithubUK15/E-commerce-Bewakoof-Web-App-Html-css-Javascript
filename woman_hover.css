@@ -1,0 +1,375 @@
+/* wo man hover  */
+
+#womenhover{
+    width: 100%;
+    height: 585px;
+    
+    /* border: 1px solid black; */
+ }
+
+ #womenhover #wo-inner {
+    width: 1031px;
+    height: 584px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+
+ }
+
+ #womenhover #wo-inner #wo-contenor{
+    width: 968px;
+    height: 512px;
+    /* border: 1px solid red; */
+    margin: 36px 31px;
+    /* overflow: hidden; */
+    display: inline-flex;
+ }
+
+ #womenhover #wo-inner #wo-contenor .tags{
+    display: inline-block;
+    width: 189px;
+    height: 512px;
+    
+}
+
+#womenhover #wo-inner #wo-contenor #wo-column4 {
+    display: inline-block;
+    width: 404px;
+    height: 512px;
+    /* border: 1px solid blue; */
+    position: relative;
+    top: -2px;
+}
+
+.wo-headh5{
+    padding: 13px 0;
+   
+}
+
+#womenhover #wo-inner #wo-contenor #wo-column4 .wo-headh5 h5{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#womenhover #wo-inner #wo-contenor #wo-column4 .tagslinks{
+    height: 64vh;
+}
+
+#womenhover #wo-inner #wo-contenor #wo-column4 .tagslinks .tag-link-inner{
+    height: 27px;
+
+}
+
+#womenhover #wo-inner #wo-contenor #wo-column4 .tagslinks .tag-link-inner a{
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+
+#womenhover #wo-inner #wo-contenor #wo-column4 .tagslinks .tag-link-inner a:hover{
+    border-bottom: 0.5px solid gray;
+    transition: .2s ease-in-out;
+}
+
+.tagslinks  #tag-acc-head h5 a:hover{
+    border: none;
+ }
+
+ .tagslinks  #tag-acc-head h5 a{
+    color: black;
+}
+
+.tagslinks #tag-foot-head h5 a:hover{
+    border: none;
+}
+
+.tagslinks #tag-foot-head h5 a{
+    color: black;
+}
+
+.tagslinks #tag-plus-head h5 a:hover{
+    border: none;
+}
+
+.tagslinks #tag-plus-head h5 a{
+    color: black;
+}
+
+#womenhover #wo-inner #wo-contenor #wo-column4 .tag-with-img{
+    width: 353px;
+    height: 70vh;
+    margin: 0 auto;
+}
+
+#womenhover #wo-inner #wo-contenor #wo-column4 .tag-link-withimg{
+    height: 42px;
+    margin: 4px 0   ;
+}
+
+
+#womenhover #wo-inner #wo-contenor #wo-column4 .tag-link-withimg a{
+    text-decoration: none;
+    
+    color: gray;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    width: 353px;
+    display: block;
+}
+/* 
+#womenhover #wo-inner #wo-contenor #wo-column4 .tag-link-withimg a span:hover{
+  border-bottom: 0.5px solid gray;
+} */
+
+#womenhover #wo-inner #wo-contenor #wo-column4  .tag-link-withimg a img{
+    width: 40px;
+    height: 40px;
+}
+
+/* Mobile covers  */
+
+#mobilehover{
+    width: 100%;
+    height: 585px;
+    /* border: 1px solid black; */
+ }
+
+ #mobilehover #mo-inner {
+    width: 1031px;
+    height: 584px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin: 0 auto;
+ }
+
+ #mobilehover #mo-inner #mo-contenor{
+    width: 968px;
+    height: 512px;
+    /* border: 1px solid red; */
+    margin: 35px 31px;
+    /* overflow: hidden; */
+    display:inline-flex;
+    /* flex-direction: row;
+    justify-content: space-between; */
+ }
+
+
+ #mobilehover #mo-inner #mo-contenor  .tags{
+    display: inline-block;
+    width: 189px;
+    height: 512px;
+    /* border: 1px solid blue; */
+}
+
+#mobilehover #mo-inner #mo-contenor #mo-column4 {
+    display: inline-block;
+    width: 399px;
+    height: 512px;
+    /* border: 1px solid blue; */
+    position: relative;
+    top: -2px;
+}
+
+.mo-headh5{
+    padding: 13px 0;
+   
+}
+
+.mo-headh5 h5{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+#tag-column2{
+    margin-top: 44px;
+}
+#tag-column2-2{
+  margin-top: 10px;
+}
+ .tagslinks{
+    height: 117px;
+    /* margin: 10px 10px; */
+}
+.tag-link-inner{
+    height: 27px;
+
+}
+
+.tag-link-inner a{
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+
+.tag-link-inner a:hover{
+    border-bottom: 0.5px solid gray;
+    transition: .2s ease-in-out;
+}
+
+.tagslinks  #tag-acc-head h5 a:hover{
+   border: none;
+}
+.tagslinks  #tag-acc-head h5 a{
+    color: black;
+}
+
+.tagslinks #tag-foot-head h5 a:hover{
+    border: none;
+}
+
+.tagslinks #tag-foot-head h5 a{
+    color: black;
+}
+#nothing #tag-plus-head h5 a:hover{
+    border: none;
+}
+.tagslinks #tag-plus-head h5 a:hover{
+    border: none;
+}
+.tagslinks #tag-plus-head h5 a{
+    color: black;
+}
+
+#mo-column1 .tagslinks #noting  a{
+    color: black;
+}
+
+#mo-column1 .tagslinks #noting:hover  a{
+    border: none;
+}
+
+#column2 #tag-column2 #Xiaomi a{
+    color: black;
+}
+
+#column2 #tag-column2 #Xiaomi:hover a{
+    border: none;
+}
+
+#column2 #tag-column2-2 #Samsung a{
+    color: black;
+}
+
+#column2 #tag-column2-2 #Samsung:hover a{
+    border: none;
+}
+
+#column3 #tag-column2 #Oneplus a{
+    color: black;
+}
+
+#column3 #tag-column2 #Oneplus:hover a{
+    border: none;
+}
+
+#column3 #tag-column2-2 #Realme a{
+    color: black;
+}
+
+#column3 #tag-column2-2 #Realme:hover a{
+    border: none;
+}
+
+#column3 #tag-column2-2 #Vivo a{
+    color: black;
+}
+
+#column3 #tag-column2-2 #Vivo:hover a{
+    border: none;
+}
+
+#mobilehover #mo-inner #mo-contenor #mo-column4  .tag-with-img{
+    width: 353px;
+    height: 512px;
+    margin: 0 auto;
+}
+
+#mobilehover #mo-inner #mo-contenor #mo-column4 .tag-link-withimg{
+    height: 42px;   
+    margin: 4px 0   ;
+}
+
+#mobilehover #mo-inner #mo-contenor #mo-column4 .tag-link-withimg a{
+    text-decoration: none;
+    
+    color: gray;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    width: 353px;
+    display: block;
+}
+
+#mobilehover #mo-inner #mo-contenor #mo-column4 .tag-link-withimg a img{
+    width: 40px;
+    height: 40px;
+}
+
+#mo-column4 .tagimg {
+    width: 354px;
+    height: 512px;
+    margin: 0 auto;
+    padding: 0 0;
+    display: flex;
+}
+
+.tagimg .leftside{
+    width: 173px;
+    
+    height: 250px;
+}
+
+.tagimg .rightside{
+    width: 179px;
+    
+    height: 294px;
+}
+
+#tagandimg .tag-linkwithimg{
+    height: 17px;
+    margin: 10px 0;
+}
+
+#tagandimg .tag-linkwithimg a{
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+.leftside h5{
+    padding-top: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#tagandimg .alldevices{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(19, 162, 250);
+    margin-top: 50px;
+}
+
+.rightside img{
+ width: 177px;
+     height:260px;
+}
+
+.line{
+    border-right: 1px solid gray;
+}
