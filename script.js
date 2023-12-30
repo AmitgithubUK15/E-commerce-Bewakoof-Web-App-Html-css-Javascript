@@ -119,7 +119,7 @@ function imggallary1(){
     
 
     
-
+     
     let a1 = document.createElement("a");
     a1.setAttribute("href","#");
     a1.classList.add("img1");
@@ -164,11 +164,17 @@ function imggallary1(){
     
     let linkarry = [a2,a3,a4,a5];
     let count = 4;
-    leftbtn.addEventListener("click",function(){
-        
+    rightbtn.addEventListener("click",function(){
         
         imgwrp.scrollLeft += 495;
+        
     });
+
+    // leftbtnbtn.addEventListener("click",function(){
+        
+    //     imgwrp.scrollLeft -= 495;
+        
+    // });
 
     // function change(){
     //    setInterval(function() {
