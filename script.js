@@ -109,17 +109,17 @@ function imggallary1(){
     imgwrp.classList.add("imgwrp");
     div.appendChild(imgwrp);
     // imgwrp.addEventListener("scroll",change)
-    let leftbtn = document.createElement("button");
-    leftbtn.innerHTML = "<";
-    let rightbtn = document.createElement('button');
-    rightbtn.innerHTML = ">";   
-    div.appendChild(leftbtn);
-    div.appendChild(rightbtn);
+    // let leftbtn = document.createElement("button");
+    // leftbtn.innerHTML = "<";
+    // let rightbtn = document.createElement('button');
+    // rightbtn.innerHTML = ">";   
+    // div.appendChild(leftbtn);
+    // div.appendChild(rightbtn);
     
     
 
     
-     
+
     let a1 = document.createElement("a");
     a1.setAttribute("href","#");
     a1.classList.add("img1");
@@ -161,21 +161,7 @@ function imggallary1(){
     imgwrp.appendChild(a5);
     basement.appendChild(div);
 
-    
-    let linkarry = [a2,a3,a4,a5];
-    let count = 4;
-    rightbtn.addEventListener("click",function(){
-        
-        imgwrp.scrollLeft += 495;
-        
-    });
-
-    // leftbtnbtn.addEventListener("click",function(){
-        
-    //     imgwrp.scrollLeft -= 495;
-        
-    // });
-
+ 
     // function change(){
     //    setInterval(function() {
     //     if(count <= 5){
@@ -198,5 +184,32 @@ function imggallary1(){
 
 imggallary1();
 
+function imggallary2(){
+    let gallary2 = document.createElement("div");
+    gallary2.classList.add("img2gallay");
+    // gallary2.textContent = "hellow";
+
+    // let imgwrp2 = document.createElement("div");
+    // imgwrp2.classList.add("img2wrp");
+    // gallary2.appendChild(imgwrp2);
+    let images = ["https://images.bewakoof.com/uploads/grid/app/category-icon-for-Desktop-Winterwear-1698217139.jpg","https://images.bewakoof.com/uploads/grid/app/category-icon-Desktop-New-Arrivals-1703766321.jpg","https://images.bewakoof.com/uploads/grid/app/category-icon-Desktop-1703766320.jpg","https://images.bewakoof.com/uploads/grid/app/category-icon-for-Desktop---1--1697613231.jpg","https://images.bewakoof.com/uploads/grid/app/Thumbnails-Msite-Plus-size--2--1697714054.jpg","https://images.bewakoof.com/uploads/grid/app/thumbnails-Revamp-Customization--1--1693212866.jpg","https://images.bewakoof.com/uploads/grid/app/thumbnails-Revamp-Combos-1693212865.gif","https://images.bewakoof.com/uploads/grid/app/thumbnails-Revamp-Vote-1693212866.jpg"];
+    let links = ["Winter Wear","New Arrivals","Bestsellers","Official Collaborations","Plus Size","Customization","Combos","Vote for Designs"];
+    for(let i=0; i<8; i++){
+      let a = document.createElement("a");
+      a.setAttribute('href','#');
+      let img =document.createElement("img");
+      img.src = images[i];
+      let span = document.createElement("span");
+      span.innerText = links[i];
+
+      a.appendChild(img);
+      a.appendChild(span);
+      
+      gallary2.appendChild(a);
+    }
+    basement.appendChild(gallary2);
+}
+
+imggallary2();
 
 
