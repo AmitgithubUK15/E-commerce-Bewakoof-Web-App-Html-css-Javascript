@@ -19,11 +19,12 @@ html,body{
 }
 
 #home{
-    width: 100%;
+    width: 1467px;
     /* min-height: 1200px; */
     box-sizing: border-box;
-    height: 3000px;
+    height: 3500px;
     border: 1px solid red;
+    margin: 0 auto;
 }
 
 #head{

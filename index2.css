@@ -387,7 +387,7 @@
 
 #head #tabwrp{
     width: 100%;
-    height: 75px;
+    height: 63px;
     /* border: 1px solid black; */
     background-color: white;
 }
@@ -584,7 +584,16 @@
     
 }
 
-
+@keyframes landingEffect {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 /* basement */
 
 #basement{
@@ -594,12 +603,12 @@
     /* border: 1px solid red; */
     /* border-top: 1px solid; */
        /* border-top: 1px solid; */
-       height: 2700px;
+       height: 3340px;
        border: 1px solid purple
 }
 
 .imgdiv{
-    width: 1468px;
+    width: 1464px;
     height: 520px;
     /* border: 1px solid blue; */
     /* display: flex; */
@@ -607,6 +616,7 @@
     /* display: flex; */
     /* overflow-x: scroll;
     overflow-y: hidden; */
+   
 }
 
 
@@ -688,7 +698,10 @@
     /* border: 1px solid black; */
         /* margin-top: 10px; */
         padding-top: 40px;
+        /* animation: landingEffect 1s ease-out; */
+        
 }
+
 
 .imgwrp3 a img{
     width: 100%;
@@ -749,7 +762,7 @@
 
 .trendy{
     width: 100%;
-    height: 700px;
+    height: 657px;
     /* border: 1px solid black; */
 }
 
@@ -765,11 +778,12 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     letter-spacing: 1px;
     font-weight:550;
+
 }
 
 .trendy .navwrapper{
     width: 100%;
-    height: 668px;
+    height: 623px;
     /* border: 1px solid yellow; */
 }
 
@@ -792,6 +806,68 @@ height: 320px;
     width: 243px;
     height: 305px;
 }
+
+.org_div{
+    width: 100%;
+    height: 450px;
+    /* border: 1px solid blue; */
+}
+
+.org_div .bwfkhsec{
+    /* border: 1px solid; */
+    width: 100%;
+    height: 46px;
+    padding-top: 15px
+}
+
+.org_div .bwfkhsec h4{
+    font-size: 23px;
+    margin: 0px auto;
+    width: 243px;
+    letter-spacing: 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
+
+.org_div .org_swipe_bar{
+    width: 100%;
+    height: 377px;
+    /* border: 1px solid yellow; */
+    /* display: flex; */
+    overflow-y: hidden;
+    overflow-x: scroll;
+
+}
+.org_swipe_bar::-webkit-scrollbar{
+    width: 0;
+
+}
+
+
+.org_div .org_swipe_bar .scrollbar{
+    width: 2185px;
+    height: 350px;
+    /* border: 1px solid yellow; */
+    display: flex;
+}
+
+.org_div .org_swipe_bar a{
+    width: 364px;
+    height: 348px;
+    /* border: 1px solid red; */
+    border-radius: 6px;
+
+}
+
+.org_div .org_swipe_bar a img{
+    display: inline-block;
+    width: 350px;
+    height: 348px;
+    margin: 0 5px;
+    border-radius: 6px;
+}
+
+
 
 
 

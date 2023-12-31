@@ -333,3 +333,43 @@ function trending_catory(){
 
 trending_catory();
 
+
+function bwfkorg_gallary(){
+  let bwfkorg_wrapper = document.createElement("div");
+  bwfkorg_wrapper.classList.add("org_div");
+  
+  let bwfkhead = document.createElement("div");
+  bwfkhead.classList.add("bwfkhsec")
+  let bwfkh4 = document.createElement("h4");
+  bwfkh4.textContent = "Bewakoof Originals";
+
+  bwfkhead.appendChild(bwfkh4);
+
+  let swipe_bar = document.createElement("div");
+  swipe_bar.classList.add("org_swipe_bar");
+
+  let bar_wrp = document.createElement('div');
+  bar_wrp.classList.add("scrollbar");
+
+  let imgarray=["https://images.bewakoof.com/uploads/grid/app/pima-pc-1701237703.jpg","https://images.bewakoof.com/uploads/grid/app/windcheater-pc-1701237705.jpg","https://images.bewakoof.com/uploads/grid/app/Banner-PC-Size-480x457.jpg","https://images.bewakoof.com/uploads/grid/app/pima-pc-1701237703.jpg","https://images.bewakoof.com/uploads/grid/app/windcheater-pc-1701237705.jpg","https://images.bewakoof.com/uploads/grid/app/Banner-PC-Size-480x457.jpg"]
+  
+  let aarray = [];
+  for(let i =0; i<6; i++){
+    let a = document.createElement("a");
+    a.setAttribute("href","#");
+
+    let img = document.createElement("img");
+    img.src = imgarray[i];
+    a.appendChild(img);
+    bar_wrp.appendChild(a);
+  }
+
+  swipe_bar.appendChild(bar_wrp);
+
+  bwfkorg_wrapper.appendChild(bwfkhead);
+  bwfkorg_wrapper.appendChild(swipe_bar);
+  basement.appendChild(bwfkorg_wrapper);
+}
+
+bwfkorg_gallary();
+
