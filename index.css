@@ -14,12 +14,14 @@ html,body{
 #app{
     width: 100%;
     background-color: #fff;
+    height: 1900px;
 }
 
 #home{
     width: 100%;
     min-height: 1200px;
     box-sizing: border-box;
+    height: 1900px;
 }
 
 #head{

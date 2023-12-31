@@ -213,3 +213,48 @@ function imggallary2(){
 imggallary2();
 
 
+function imgwrp3(){
+    let imgwrapper = document.createElement("div");
+    imgwrapper.classList.add("imgwrp3");
+    
+    let a = document.createElement("a");
+    a.style.width = "100%";
+    a.style.height = "170px";
+    // a.style.border= "1px solid red";
+    a.style.display = "block";
+    a.setAttribute('href',"#");
+    
+    let img = document.createElement("img");
+    img.src = "https://images.bewakoof.com/uploads/grid/app/Prebuzz-Cotm-friends-Desktop-thin-banner-1703940802.gif";
+    a.appendChild(img);
+
+    imgwrapper.appendChild(a);
+
+    basement.appendChild(imgwrapper);
+}
+
+imgwrp3();
+
+function imgwrp4(){
+    let imgwrapper = document.createElement("div");
+    imgwrapper.classList.add("imgwrp4");
+    
+    let a = document.createElement("a");
+    a.style.width = "100%";
+    a.style.height = "170px";
+    // a.style.border= "1px solid red";
+    a.style.display = "block";
+    a.setAttribute('href',"#");
+    
+    let img = document.createElement("img");
+    img.src = "https://images.bewakoof.com/uploads/grid/app/Blockbuster-deal-thin-strip-Desktop-Jackets-min-50off--2--1703851386.jpg";
+    a.appendChild(img);
+
+    imgwrapper.appendChild(a);
+
+    basement.appendChild(imgwrapper);
+}
+
+imgwrp4();
+
+
