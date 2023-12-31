@@ -258,3 +258,46 @@ function imgwrp4(){
 imgwrp4();
 
 
+function imgwrp5(){
+    let imgwrapper5 = document.createElement("div");
+    imgwrapper5.classList.add("imgwrp5");
+    
+    let headersection = document.createElement("div");
+    headersection.classList.add("headersection");
+    let h4 = document.createElement("h4");
+    h4.innerText = "Design of the week";    
+    headersection.appendChild(h4);
+
+    let imgdiv = document.createElement("div");
+    imgdiv.classList.add("image-section");
+    
+
+    let a1 = document.createElement("a");
+    a1.classList.add("link");
+    a1.setAttribute("href","#");
+     
+    let img = document.createElement("img");
+    img.src = "https://images.bewakoof.com/uploads/grid/app/DOTW-Split-banner-Desktop-Men-1703576682.jpg";
+    
+    a1.appendChild(img);
+
+    let a2 = document.createElement("a");
+    a2.classList.add("link");
+    a2.setAttribute("href","#");
+
+    let img2 = document.createElement("img");
+    img2.src = "https://images.bewakoof.com/uploads/grid/app/DOTW-Split-banner-Desktop-Women-1703576683.jpg";
+    a2.appendChild(img2);
+    
+    
+    imgwrapper5.appendChild(headersection);
+    // imgwrapper5.appendChild(a2);
+    // imgwrapper5.appendChild(a1);
+    imgdiv.appendChild(a1);
+    imgdiv.appendChild(a2);
+    imgwrapper5.appendChild(imgdiv);
+    basement.appendChild(imgwrapper5);
+}
+
+imgwrp5();
+
