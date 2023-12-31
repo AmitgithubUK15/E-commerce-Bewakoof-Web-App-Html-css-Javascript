@@ -262,15 +262,11 @@ function imgwrp5(){
     let imgwrapper5 = document.createElement("div");
     imgwrapper5.classList.add("imgwrp5");
     
-    let headersection = document.createElement("div");
-    headersection.classList.add("headersection");
+    let head = document.createElement("div");
+    head.classList.add("header-section");
     let h4 = document.createElement("h4");
     h4.innerText = "Design of the week";    
-    headersection.appendChild(h4);
-
-    let imgdiv = document.createElement("div");
-    imgdiv.classList.add("image-section");
-    
+    head.appendChild(h4);
 
     let a1 = document.createElement("a");
     a1.classList.add("link");
@@ -289,15 +285,51 @@ function imgwrp5(){
     img2.src = "https://images.bewakoof.com/uploads/grid/app/DOTW-Split-banner-Desktop-Women-1703576683.jpg";
     a2.appendChild(img2);
     
-    
-    imgwrapper5.appendChild(headersection);
-    // imgwrapper5.appendChild(a2);
-    // imgwrapper5.appendChild(a1);
-    imgdiv.appendChild(a1);
-    imgdiv.appendChild(a2);
-    imgwrapper5.appendChild(imgdiv);
+    imgwrapper5.appendChild(head);
+    imgwrapper5.appendChild(a1);
+    imgwrapper5.appendChild(a2);
     basement.appendChild(imgwrapper5);
 }
 
 imgwrp5();
+
+function trending_catory(){
+    let trn_wrapper = document.createElement('div');
+    trn_wrapper.classList.add('trendy');
+    
+    let wrp_tittle= document.createElement("div");
+    wrp_tittle.classList.add('wrp_title')
+
+    let trn_h4 =document.createElement("h4");
+    trn_h4.textContent = "TRENDING CATEGORIES";
+
+    wrp_tittle.appendChild(trn_h4);
+
+    let nav_wrapper = document.createElement("div");
+    nav_wrapper.classList.add("navwrapper");
+    
+    let imaglist = ["https://images.bewakoof.com/uploads/grid/app/category-box-new-D-240x350-printed-tees-m-1685445850.jpg","https://images.bewakoof.com/uploads/grid/app/category-box-oversized-tees-m-1685086219.jpg","https://images.bewakoof.com/uploads/grid/app/category-box-new-240x350-men-shorts-1686063035.jpg","https://images.bewakoof.com/uploads/grid/app/category-box-joggers-m-1684997505.jpg","https://images.bewakoof.com/uploads/grid/app/category-box-new-240x350-men-vests-1686063036.jpg","https://images.bewakoof.com/uploads/grid/app/category-box-new-240x350-men-fullsleeve-1686063034.jpg","https://images.bewakoof.com/uploads/grid/app/category-box-new-D-240x350-printed-tees-w-1685445851.jpg","https://images.bewakoof.com/uploads/grid/app/category-box-Oversized-tshirts-Women-1682055634.png","https://images.bewakoof.com/uploads/grid/app/category-box-new-D-240x350-fashion-tops-1686305660.jpg","https://images.bewakoof.com/uploads/grid/app/category-box-Joggers-Women-1682055633.png","https://images.bewakoof.com/uploads/grid/app/category-box-new-D-240x350-WOMEN-Dresses-1681725004.jpg","https://images.bewakoof.com/uploads/grid/app/category-box-new-D-240x350-WOMEN-BoyfriendTeess-1681730084.jpg"];
+    let count = 0;
+    for(let i=1; i<=2; i++){
+        let colums = document.createElement("div");
+        colums.classList.add("navinnercolums");
+
+        for(let j=0; j<=5; j++){
+            
+            let trn_a = document.createElement("a");    
+            trn_a.setAttribute("href","#");
+            let img = document.createElement("img");
+            img.src = imaglist[count];
+            count++;
+            trn_a.appendChild(img);
+            colums.appendChild(trn_a);
+        }
+        nav_wrapper.appendChild(colums);
+    }
+    trn_wrapper.appendChild(wrp_tittle);
+    trn_wrapper.appendChild(nav_wrapper);
+    basement.appendChild(trn_wrapper);
+}
+
+trending_catory();
 

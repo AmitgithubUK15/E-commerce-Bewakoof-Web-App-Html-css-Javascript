@@ -14,14 +14,16 @@ html,body{
 #app{
     width: 100%;
     background-color: #fff;
-    height: 1900px;
+    height: 4000px;
+    border: 1px solid black;
 }
 
 #home{
     width: 100%;
-    min-height: 1200px;
+    /* min-height: 1200px; */
     box-sizing: border-box;
-    height: 1900px;
+    height: 3000px;
+    border: 1px solid red;
 }
 
 #head{
