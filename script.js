@@ -493,3 +493,234 @@ function imgwrp9(){
 }
 
 imgwrp9();
+
+function imgwrp10(){
+    let div = document.createElement("div");
+    div.classList.add("imgdiv");
+
+    let imgwrp = document.createElement("div");
+    imgwrp.classList.add("imgwrp");
+    div.appendChild(imgwrp);
+    // imgwrp.addEventListener("scroll",change)
+    // let leftbtn = document.createElement("button");
+    // leftbtn.innerHTML = "<";
+    // let rightbtn = document.createElement('button');
+    // rightbtn.innerHTML = ">";   
+    // div.appendChild(leftbtn);
+    // div.appendChild(rightbtn);
+    
+    
+
+    
+
+    let a1 = document.createElement("a");
+    a1.setAttribute("href","#");
+    a1.classList.add("img1");
+    let i1 = document.createElement("img");
+    i1.src = "https://images.bewakoof.com/uploads/grid/app/1x1--banner-hc-Rashmika-1704011495.jpg   ";
+    a1.appendChild(i1);
+    imgwrp.appendChild(a1);
+    
+    let a2 =document.createElement("a");
+    a2.setAttribute("href","#");
+    a2.classList.add("img2");
+    let i2 = document.createElement("img");
+    i2.src="https://images.bewakoof.com/uploads/grid/app/NEW-1x1-cargo-common--3--1704011926.jpg";
+    a2.appendChild(i2);
+    imgwrp.appendChild(a2);
+    
+    let a3 = document.createElement("a");
+    a3.setAttribute("href","#");
+    a3.classList.add("img3");
+    let i3 = document.createElement("img");
+    i3.src = "https://images.bewakoof.com/uploads/grid/app/1x1-1703164584.gif";
+    a3.appendChild(i3);
+    imgwrp.appendChild(a3);
+
+    let a4 = document.createElement("a");
+    a4.setAttribute("href","#");
+    a4.classList.add("img4");
+    let i4 = document.createElement("img");
+    i4.src = "https://images.bewakoof.com/uploads/grid/app/NEW-1x1-GPOT-Common-NewShoot--1--1703832857.jpg";
+    a4.appendChild(i4);
+    imgwrp.appendChild(a4);
+
+
+    basement.appendChild(div);
+
+ 
+    // function change(){
+    //    setInterval(function() {
+    //     if(count <= 5){
+    //         count++;
+    //         // imgwrp.scrollLeft += 494;
+    //         // imgwrp.insertBefore(linkarry[count - 1],imgwrp.firstChild);
+    //     }
+    //     else{
+    //         count =0;
+    //     }
+    //    }, 4000);
+    // console.log(imgwrp.scrollLeft);
+    // }
+
+    // change();
+    
+    //495,1025
+    
+}
+
+imgwrp10();
+
+function imgwrp11(){
+    let trn_wrapper = document.createElement('div');
+    trn_wrapper.classList.add('wrper11');
+    
+    let wrp9h= document.createElement("div");
+    wrp9h.classList.add('wrp9head')
+
+    let h4 =document.createElement("h4");
+    h4.textContent = "TOP ACCESSORIES";
+    
+    wrp9h.appendChild(h4);
+
+    let nav_wrapper = document.createElement("div");
+    nav_wrapper.classList.add("navwrapper");
+    
+    let imaglist = ["https://images.bewakoof.com/uploads/grid/app/360x524-accessories-categorybox-Mobile-covers-1694760545.jpg","https://images.bewakoof.com/uploads/grid/app/360x524-accessories-categorybox-Sliders-1694760546.jpg","https://images.bewakoof.com/uploads/grid/app/360x524-accessories-categorybox-Backpacks-1694760544.jpg","https://images.bewakoof.com/uploads/grid/app/360x524-accessories-categorybox-Caps-1694760545.jpg"];
+    let count = 0;
+    for(let i=1; i<=1; i++){
+        let colums = document.createElement("div");
+        colums.classList.add("navinnercolums");
+
+        for(let j=0; j<4; j++){
+            
+            let trn_a = document.createElement("a");    
+            trn_a.setAttribute("href","#");
+            let img = document.createElement("img");
+            img.src = imaglist[count];
+            count++;
+            trn_a.appendChild(img);
+            colums.appendChild(trn_a);
+        }
+        nav_wrapper.appendChild(colums);
+    }
+    trn_wrapper.appendChild(wrp9h);
+    trn_wrapper.appendChild(nav_wrapper);
+    basement.appendChild(trn_wrapper);
+}
+
+imgwrp11();
+
+function itemlist(){
+  let listdiv = document.createElement("div");
+  listdiv.classList.add("list_swiperdiv");
+
+  let swipehead = document.createElement("div");
+  swipehead.classList.add("swipedivhead");
+
+  let h4 = document.createElement("h4");
+  h4.innerText = "BESTSELLERS";
+  swipehead.appendChild(h4);
+  
+  let item_swiper = document.createElement("div");
+  item_swiper.classList.add("item_swipebar_wraper");
+ 
+  let scrolldiv = document.createElement("div");
+  scrolldiv.classList.add("scroll_wraper");
+
+  let imglist = ["https://images.bewakoof.com/t320/men-s-black-t-shirt-106-1665669034-5.jpg","https://images.bewakoof.com/t320/women-s-brown-mickey-the-original-graphic-printed-oversized-t-shirt-dress-546192-1700842684-1.jpg","https://images.bewakoof.com/t320/men-s-blue-t-shirt-115-1659608420-1.jpg","https://images.bewakoof.com/t320/women-s-black-casual-slim-fit-joggers-293073-1683264182-1.JPG","https://images.bewakoof.com/t320/dark-grey-casual-jogger-pant-293066-1660652893-5.jpg","https://images.bewakoof.com/t320/men-s-white-t-shirt-105-1702967985-1.jpg","https://images.bewakoof.com/t320/men-s-white-t-shirt-1093-1702967686-1.jpg","https://images.bewakoof.com/t320/men-s-green-cyber-samurai-graphic-printed-t-shirt-589374-1700548868-1.jpg","https://images.bewakoof.com/t320/men-s-grey-oversized-plus-size-t-shirt-580181-1698308500-1.jpg","https://images.bewakoof.com/t320/men-s-blue-t-shirt-1092-1665669224-2.jpg","https://images.bewakoof.com/t320/men-s-navy-blazer-oversized-t-shirt-560617-1677761081-1.jpg","https://images.bewakoof.com/t320/men-s-full-sleeve-t-shirts-1094-1672036930-1.jpg","https://images.bewakoof.com/t320/sage-green-casual-cotton-trouser-340543-1663661857-6.jpg","https://images.bewakoof.com/t320/men-s-plus-size-black-oversized-fit-puffer-jacket-498978-1700206295-1.jpg","https://images.bewakoof.com/t320/men-s-black-oversized-t-shirt-539556-1696335986-1.jpg"];
+ 
+//   let nof_item = ["Men Black T-shir/t",]
+  for(let i =0; i<=14; i++){
+    let a = document.createElement("a");
+    a.setAttribute("href","#");
+    
+    let img_box = document.createElement("div");
+    img_box.classList.add("image_boxwrp");
+
+    let img = document.createElement("img");
+    img.style.width = "236px";
+    img.style.height = "330px";
+    img.src = imglist[i];
+
+    
+    img_box.appendChild(img);
+    let text_box = document.createElement("div");
+    text_box.classList.add("text_boxwrp");
+
+    let div1 =document.createElement("div");
+    div1.classList.add("Name_like");
+
+    let for_name = document.createElement("div");
+    for_name.classList.add("product_name");
+
+    let h3 = document.createElement("h3");
+    h3.innerText = "Bewakoof®";
+    
+    let h2 = document.createElement("h2");
+    h2.innerText = "blacktshit";
+
+    for_name.appendChild(h3);
+    for_name.appendChild(h2);
+
+    let for_like = document.createElement("div");
+    for_like.classList.add("likebtn");
+    
+    let like_icon  = document.createElement("img");
+    like_icon.style.margin = "2px 11px";
+    like_icon.src = "https://images.bewakoof.com/web/Wishlist.svg";
+
+    for_like.appendChild(like_icon);
+    div1.appendChild(for_name);
+    div1.appendChild(for_like);
+
+    // div 2 for price 
+    let div2 =document.createElement("div");
+    div2.classList.add("price");
+
+    for(let j=1; j<=3; j++){
+        let pricd = document.createElement("div");
+        pricd.style.display = "inline-block";
+        pricd.style.marginLeft = "10px";
+        pricd.style.fontFamily = "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif";
+        if (j===1){
+            // let s = document.createElement("span");
+            // s.innerText = "";
+            // pricd.appendChild(s);
+            pricd.innerText = "₹"+699;
+            pricd.style.color = "black";
+            
+            div2.appendChild(pricd);
+        }
+        else if(j === 2){
+            pricd.innerText = "₹1299";
+            pricd.style.color = "#4f5362";
+            pricd.style.fontSize = "12px";
+            div2.appendChild(pricd);
+        }
+        else{
+            pricd.innerText = "46% OFF";
+            pricd.style.color = "#00b852";
+            pricd.style.fontSize = "15px";
+            div2.appendChild(pricd);
+        }
+
+    }
+    
+    text_box.appendChild(div1);
+    text_box.appendChild(div2);
+    
+
+    a.appendChild(img_box);
+    a.appendChild(text_box);
+    scrolldiv.appendChild(a);
+  }
+  
+  item_swiper.appendChild(scrolldiv);
+
+  listdiv.appendChild(swipehead);
+  listdiv.appendChild(item_swiper);
+  basement.appendChild(listdiv);
+}
+
+itemlist();

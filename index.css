@@ -14,7 +14,7 @@ html,body{
 #app{
     width: 100%;
     background-color: #fff;
-    height: 5000px;
+    height: 7500px;
     border: 1px solid black;
 }
 
@@ -22,7 +22,7 @@ html,body{
     width: 1467px;
     /* min-height: 1200px; */
     box-sizing: border-box;
-    height:4995px;
+    height:7495px;
     border: 1px solid red;
     margin: 0 auto;
 }
