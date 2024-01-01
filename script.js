@@ -412,4 +412,84 @@ function imgwrp6(){
 
 imgwrp6();
 
+function imgwrp7(){
+    let wrp7_div = document.createElement("div");
+    wrp7_div.classList.add("wrp7div");
+    
+    let imgarr  = ["https://images.bewakoof.com/uploads/grid/app/Sum-Up-2023-desktop-mid-size-banner-1703940798.jpg","https://images.bewakoof.com/uploads/grid/app/Parachute-pants-Women-Desktop-midsize-banner--1--1704011368.jpg"];
+    for(let i=0; i<=1; i++){
+        let div = document.createElement("div");
+        div.classList.add(`idiv7`);
+        
+        let a = document.createElement("a");
+        a.setAttribute("href","#");
+        
+        let img = document.createElement("img");
+        img.src = imgarr[i];
+    
+        a.appendChild(img);
+        div.appendChild(a); 
+        wrp7_div.appendChild(div);
+      }
 
+    basement.appendChild(wrp7_div);
+}
+
+imgwrp7();
+
+function imgwrp8(){
+    let wrp8 = document.createElement("div");
+    wrp8.classList.add("wrp8d");
+
+    let a = document.createElement("a");
+    a.setAttribute("href","#");
+    
+    let img = document.createElement("img");
+    img.src = "https://images.bewakoof.com/uploads/grid/app/Color-Survey-Thin-Desktop-Banner-1703845964.gif";
+    
+    a.appendChild(img);
+    wrp8.appendChild(a);
+    basement.appendChild(wrp8);
+}
+
+imgwrp8();
+
+function imgwrp9(){
+    let trn_wrapper = document.createElement('div');
+    trn_wrapper.classList.add('wrper9');
+    
+    let wrp9h= document.createElement("div");
+    wrp9h.classList.add('wrp9head')
+
+    let h4 =document.createElement("h4");
+    h4.textContent = "TRENDING CATEGORIES";
+    
+    wrp9h.appendChild(h4);
+
+    let nav_wrapper = document.createElement("div");
+    nav_wrapper.classList.add("navwrapper");
+    
+    let imaglist = ["https://images.bewakoof.com/uploads/grid/app/category-box-new-240x350-men-sshirts-1686063036.jpg","https://images.bewakoof.com/uploads/grid/app/category-box-boxers-1685086219.jpg","https://images.bewakoof.com/uploads/grid/app/Pajamas-Trending-category-tile--Men-1703766157.jpg","https://images.bewakoof.com/uploads/grid/app/category-box-new-240x350-women-cords-1686063032.jpg","https://images.bewakoof.com/uploads/grid/app/Pajamas-Trending-category-tile--Women-1703766157.jpg","https://images.bewakoof.com/uploads/grid/app/category-box-new-240x350-women-shorts-1686063034.jpg"];
+    let count = 0;
+    for(let i=1; i<=1; i++){
+        let colums = document.createElement("div");
+        colums.classList.add("navinnercolums");
+
+        for(let j=0; j<=5; j++){
+            
+            let trn_a = document.createElement("a");    
+            trn_a.setAttribute("href","#");
+            let img = document.createElement("img");
+            img.src = imaglist[count];
+            count++;
+            trn_a.appendChild(img);
+            colums.appendChild(trn_a);
+        }
+        nav_wrapper.appendChild(colums);
+    }
+    trn_wrapper.appendChild(wrp9h);
+    trn_wrapper.appendChild(nav_wrapper);
+    basement.appendChild(trn_wrapper);
+}
+
+imgwrp9();
