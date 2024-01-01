@@ -373,3 +373,43 @@ function bwfkorg_gallary(){
 
 bwfkorg_gallary();
 
+function imgwrp6(){
+  let wrapper6 = document.createElement("div");
+  wrapper6.classList.add("wrapper6d");
+
+  let wrp6h4 = document.createElement("div");
+  wrp6h4.classList.add("wrp6h4");
+  
+  let h4 = document.createElement("h4");
+  h4.innerText = "TOO HOT TO BE MISSED";
+
+  wrp6h4.appendChild(h4);
+
+  let wrp6_img_div = document.createElement("div");
+  wrp6_img_div.classList.add("wrpimgdiv");
+
+  let imgarr = ["https://images.bewakoof.com/uploads/grid/app/Graphic-printed-hoodies---Sweatshirts-Common-desktop-mid-size-banner-1704010744.jpg","https://images.bewakoof.com/uploads/grid/app/deskop-mid-size-winter-common--1--1704008634.jpg"]
+
+  for(let i=0; i<=1; i++){
+    let div = document.createElement("div");
+    div.classList.add(`idiv`);
+    
+    let a = document.createElement("a");
+    a.setAttribute("href","#");
+    
+    let img = document.createElement("img");
+    img.src = imgarr[i];
+
+    a.appendChild(img);
+    div.appendChild(a); 
+    wrp6_img_div.appendChild(div);
+  }
+
+  wrapper6.appendChild(wrp6h4);
+  wrapper6.appendChild(wrp6_img_div);
+  basement.appendChild(wrapper6);
+}
+
+imgwrp6();
+
+
