@@ -641,6 +641,7 @@ function itemlist(){
     let img = document.createElement("img");
     img.style.width = "236px";
     img.style.height = "330px";
+    img.style.borderRadius
     img.src = imglist[i];
 
     
@@ -717,10 +718,93 @@ function itemlist(){
   }
   
   item_swiper.appendChild(scrolldiv);
+  
+  let explorediv =  document.createElement("div");
+  explorediv.classList.add("explorediv");
+  explorediv.style.width = "100%";
+  explorediv.style.height = "34px";
+  
+  
 
+  let explorebtn = document.createElement("a");
+  explorebtn.href="#";
+  explorebtn.innerHTML = "Explore All";
+  explorebtn.style.display = "block";
+  explorebtn.style.width = "125px";
+  explorebtn.style.margin = "0 auto";
+  explorebtn.style.fontSize = "20px";
+  explorebtn.style.color = "#008af9";
+  explorebtn.style.fontFamily = "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif";
+  explorediv.appendChild(explorebtn);
   listdiv.appendChild(swipehead);
   listdiv.appendChild(item_swiper);
+  listdiv.appendChild(explorediv);
   basement.appendChild(listdiv);
 }
 
-itemlist();
+itemlist(); 
+
+function imgwrp12(){
+    let wrapper6 = document.createElement("div");
+    wrapper6.classList.add("wrapper6d");
+  
+    let wrp6h4 = document.createElement("div");
+    wrp6h4.classList.add("wrp6h4");
+    
+    let h4 = document.createElement("h4");
+    h4.style.width = "192px";
+    h4.innerText = "OUR BEST PICKS";
+  
+    wrp6h4.appendChild(h4);
+  
+    let wrp6_img_div = document.createElement("div");
+    wrp6_img_div.classList.add("wrpimgdiv");
+  
+    let imgarr = ["https://images.bewakoof.com/uploads/grid/app/720x420-Midsize-bannner-Combos--1--1704012294.jpg","https://images.bewakoof.com/uploads/grid/app/Official-Merch-store-Desktop-banner-1700470826-1701771559.webp"];
+  
+    for(let i=0; i<=1; i++){
+      let div = document.createElement("div");
+      div.classList.add(`idiv`);
+      
+      let a = document.createElement("a");
+      a.setAttribute("href","#");
+      
+      let img = document.createElement("img");
+      img.src = imgarr[i];
+  
+      a.appendChild(img);
+      div.appendChild(a); 
+      wrp6_img_div.appendChild(div);
+    }
+  
+    wrapper6.appendChild(wrp6h4);
+    wrapper6.appendChild(wrp6_img_div);
+    basement.appendChild(wrapper6);
+  }
+  
+  imgwrp12();
+  
+  function imgwrp13(){
+      let wrp7_div = document.createElement("div");
+      wrp7_div.classList.add("wrp7div");
+      
+      let imgarr  = ["https://images.bewakoof.com/uploads/grid/app/Customise-Desktop-midsize-Banner-1699360277.jpg","https://images.bewakoof.com/uploads/grid/app/Plus-Size-Desktop-midsize-Banner--1--1699360278.jpg"];
+      for(let i=0; i<=1; i++){
+          let div = document.createElement("div");
+          div.classList.add(`idiv7`);
+          
+          let a = document.createElement("a");
+          a.setAttribute("href","#");
+          
+          let img = document.createElement("img");
+          img.src = imgarr[i];
+      
+          a.appendChild(img);
+          div.appendChild(a); 
+          wrp7_div.appendChild(div);
+        }
+  
+      basement.appendChild(wrp7_div);
+  }
+  
+  imgwrp13();
