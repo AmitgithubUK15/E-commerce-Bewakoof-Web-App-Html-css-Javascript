@@ -11,6 +11,8 @@ html,body{
     overflow-x: hidden;
 }
 
+
+
 #app{
     width: 100%;
     background-color: #fff;
@@ -18,12 +20,16 @@ html,body{
     border: 1px solid black;
 }
 
+/* mouser follower */
+
+
+
 #home{
     width: 1467px;
     /* min-height: 1200px; */
     box-sizing: border-box;
     height:7495px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0 auto;
 }
 

@@ -17,6 +17,33 @@ function show(){
 //     return men;
 // }
 
+// mouser follower
+
+document.addEventListener('DOMContentLoaded', function() {
+    const follower = document.querySelector('.follower');
+    const bubble = document.querySelector('.bubble');
+  
+    document.addEventListener('mousemove', function(e) {
+      const x = e.clientX;
+      const y = e.clientY;
+  
+      // Update the position of the follower based on the mouse coordinates
+      follower.style.transform = `translate(${x}px, ${y}px)`;
+  
+      // Simulate the bubbling effect by positioning the bubble slightly below and fading it in
+      bubble.style.transform = `translate(${x}px, ${y + 20}px)`;
+      bubble.style.opacity = 1;
+  
+      // Use a setTimeout to fade out the bubble after a short delay
+      setTimeout(() => {
+        bubble.style.opacity = 0;
+      }, 200);
+    });
+  });
+
+
+//   nav link
+
 var menbtn = document.getElementById("Men");
 
 menbtn.addEventListener("mouseover",function(){
@@ -808,3 +835,40 @@ function imgwrp12(){
   }
   
   imgwrp13();
+
+  function imgwrp14(){
+    let wrp_14 = document.createElement("div");
+    wrp_14.style.width  = "100%";
+    wrp_14.style.height = "340px";
+    // wrp_14.style.border = "1px solid black";
+
+    let img_arr = ["https://images.bewakoof.com/uploads/grid/app/Desktop-Strip-3-1672040129.jpg","https://images.bewakoof.com/uploads/grid/app/Desktop-Strip-3-1669022420.jpg"]
+    for(let i =0 ; i<=1; i++){
+        let div = document.createElement("div");
+        div.style.width ="100%";
+        div.style.height = "160px";
+        // div.style.border = "1px solid red";
+        div.style.margin = "6px 0";
+
+        let a = document.createElement("a");
+        a.setAttribute("href","#");
+        a.style.display = "inline-block";
+        a.style.width = "100%";
+        a.style.height = "160px";
+      
+        let img = document.createElement("img");
+        img.src = img_arr[i];
+        img.style.width = "100%";
+        img.style.height = "160px";
+
+        a.appendChild(img);
+        div.appendChild(a);
+        wrp_14.appendChild(div);
+    }
+
+    basement.appendChild(wrp_14);
+  }
+
+  imgwrp14();
+
+
