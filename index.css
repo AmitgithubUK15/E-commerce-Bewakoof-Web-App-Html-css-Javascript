@@ -13,11 +13,12 @@ html,body{
 
 
 
+
 #app{
     width: 100%;
     background-color: #fff;
-    height: 7500px;
-    border: 1px solid black;
+    height: 10382px;
+    /* border: 1px solid black; */
 }
 
 /* mouser follower */
@@ -28,9 +29,10 @@ html,body{
     width: 1467px;
     /* min-height: 1200px; */
     box-sizing: border-box;
-    height:7495px;
+    box-sizing: border-box;
+    height: 10382px;
     /* border: 1px solid red; */
-    margin: 0 auto;
+    margin: auto auto;
 }
 
 #head{
